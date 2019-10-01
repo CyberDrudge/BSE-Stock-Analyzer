@@ -16,7 +16,13 @@
 
     <div class="container">
       {% block content %}
-        <h1>Welcome!</h1>
+        <h1>Welcome!</h1><br/>
+
+      <h5>BSE publishes a <a href="https://www.bseindia.com/markets/MarketInfo/BhavCopy.aspx">Bhav Copy file</a> on all market days.
+        This <b>CherryPy</b> applicaton downloads the latest <i>Equity bhav copy</i> zip, extracts it and parses the CSV file in it.
+        It stores the records using <b>Redis DB</b> and lists the top 10 stock entries.</h5><br/>
+
+        <a href="/top_stocks" class="button">View latest Bhavcopy data</a>
       {% endblock %}
     </div>
   </body>
