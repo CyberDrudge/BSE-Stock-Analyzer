@@ -1,1 +1,2 @@
 # BSE-Stock-Analyzer
+BSE publishes a [Bhav Copy](https://www.bseindia.com/markets/MarketInfo/BhavCopy.aspx) file on all market days. This **CherryPy** applicaton downloads the latest _Equity bhav copy_ zip, extracts it and parses the CSV file in it. It stores the records using **Redis DB** and lists the top 10 stock entries.
